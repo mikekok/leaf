@@ -1,0 +1,16 @@
+code {
+  background: $color-border;
+  border-radius: $border-radius;
+  padding: .4rem .8rem;
+}
+
+pre {
+  background-color: $color-border;
+  border-left: .2rem solid $color-primary;
+
+  &>code {
+    border-radius: 0;
+    display: block;
+    white-space: pre;
+  }
+}

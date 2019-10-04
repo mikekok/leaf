@@ -1,0 +1,14 @@
+$spaces: ("xs": .4, "sm": 1.2, "md": 2, "lg": 3.2, "xl": 5.2, "xxl": 8.4);
+$sides: (top, bottom, left, right);
+
+@each $key, $space in $spaces {
+  @each $side in $sides {
+    .mar-#{$side}-#{$key} {
+      margin-#{$side}: #{$space}rem!important;
+    }
+
+    .pad-#{$side}-#{$key} {
+      padding-#{$side}: #{$space}rem !important;
+    }
+  }
+}

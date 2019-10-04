@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leaf</title>
+
+  <!-- Typography -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&display=swap" rel="stylesheet">
+  <!-- Style -->
+  <link rel="stylesheet" href="../dist/style.min.css">
+  <!-- Page Style -->
+  <link rel="stylesheet" href="./css/home.css">
+
+</head>
+
+<body class="is-colored">
+
+  <div class="container">
+    <header class="flex-container is-vertical is-centered">
+      <img id="logo" src="./img/logo.svg" alt="Leaf">
+      <div class="mar-bottom-xl"></div>
+
+      <h1>leaf.css</h1>
+      <h4 class="is-gray">a minimal CSS framework</h4>
+      <div class="mar-bottom-md"></div>
+
+      <div>
+        <a class="btn is-primary">Download</a>
+        <a class="btn is-primary-outline" href="#docs">Documentation</a>
+      </div>
+    </header>
+  </div>
+  <div class="mar-bottom-xxl"></div>
+
+  <div id="docs" class="container is-small">
+
+    <!-- Getting Started -->
+    <h3>Getting Started</h3>
+    <p class="is-gray">You can use <code class="prettyprint">leaf.css</code> in your project by including the minified
+      version in your <code class="prettyprint">head</code> section.</p>
+    <code class="prettyprint">&lt;link rel="stylesheet" href="leaf.min.css"&gt;</code>
+    <div class="mar-bottom-md"></div>
+    <p class="is-gray">By default, leaf uses the Noto Sans TC font, which is free and can be added to your project
+      through Google fonts.<br>It also works pretty well with most fonts around, just don't forget to adjust the font
+      weight variables based on your needs (<code class="prettyprint">$font-weight-normal</code> and <code
+        class="prettyprint">$font-weight-bold</code>).</p>
+    <code class="prettyprint">&lt;link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&display=swap"&gt;</code>
+    <div class="mar-bottom-lg"></div>
+
+    <!-- Grid -->
+    <div class="mar-bottom-xxl"></div>
+    <h3>Grid</h3>
+    <p class="is-gray">You can either add as many auto-adjustable columns as you want, using the <code
+        class="prettyprint">col</code> class inside a <code class="prettyprint">row</code> element or specify the width of each column (in a 12 column layout) using the class
+      names that can be seen below.<br>There is also the possibility to specify the column width for predefined
+      breakpoints,
+      using three different modifiers, <code class="prettyprint">desk</code>, <code class="prettyprint">tab</code> and
+      <code class="prettyprint">mob</code>.<br>For example, if you want a 6/12 width column just for mobile, you could
+      use <code class="prettyprint">col-mob-6</code>.</p>
+    <div class="mar-bottom-lg"></div>
+
+    <p>Auto-adjustable Columns</p>
+    <div class="row">
+      <div class="col">
+        <div class="grid-box">col</div>
+      </div>
+      <div class="col">
+        <div class="grid-box">col</div>
+      </div>
+      <div class="col">
+        <div class="grid-box">col</div>
+      </div>
+    </div>
+    <div class="mar-bottom-md"></div>
+
+    <p>12 Columns Layout</p>
+    <div class="row">
+      <div class="col-12">
+        <div class="grid-box">col-12</div>
+      </div>
+      <div class="col-10">
+        <div class="grid-box">col-10</div>
+      </div>
+      <div class="col-2">
+        <div class="grid-box">col-2</div>
+      </div>
+      <div class="col-8">
+        <div class="grid-box">col-8</div>
+      </div>
+      <div class="col-4">
+        <div class="grid-box">col-4</div>
+      </div>
+      <div class="col-6">
+        <div class="grid-box">col-6</div>
+      </div>
+      <div class="col-6">
+        <div class="grid-box">col-6</div>
+      </div>
+      <div class="col-4">
+        <div class="grid-box">col-4</div>
+      </div>
+      <div class="col-8">
+        <div class="grid-box">col-8</div>
+      </div>
+      <div class="col-2">
+        <div class="grid-box">col-2</div>
+      </div>
+      <div class="col-10">
+        <div class="grid-box">col-10</div>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mar-bottom-xxl"></div>
+    <h3>Buttons</h3>
+    <p class="is-gray">Add the <code class="prettyprint">btn</code> class or use the <code
+        class="prettyprint">button</code> element, along with the class names listed below.
+    </p>
+    <div class="mar-bottom-lg"></div>
+
+    <p class="is-gray">You can go with the classic button styles</p>
+    <button class="is-primary">is-primary</button>
+    <button class="is-primary-outline">is-primary-outline</button>
+    <button class="is-clear">is-clear</button>
+    <button disabled>disabled</button>
+    <div class="mar-bottom-sm"></div>
+
+    <p class="is-gray">change their sizes</p>
+    <button class="is-primary-outline is-large">is-large</button>
+    <button class="is-primary is-small">is-small</button>
+    <div class="mar-bottom-sm"></div>
+
+    <p class="is-gray">or make buttons a little bit more playful by adding some color</p>
+
+    <button class="is-purple">is-purple</button>
+    <button class="is-purple-outline">is-purple-outline</button>
+    <br>
+    <button class="is-blue">is-blue</button>
+    <button class="is-blue-outline">is-blue-outline</button>
+    <br>
+    <button class="is-red">is-red</button>
+    <button class="is-red-outline">is-red-outline</button>
+    <br>
+    <button class="is-yellow">is-yellow</button>
+    <button class="is-yellow-outline">is-yellow-outline</button>
+
+    <!-- Forms -->
+    <div class="mar-bottom-xxl"></div>
+    <h3>Forms</h3>
+    <p class="is-gray">You can turn any form element into a full-width one, using the class <code
+        class="prettyprint">is-fullwidth</code>.<br>You can also make labels bold or inline, using <code
+        class="prettyprint">is-bold</code> and <code class="prettyprint">is-inline</code> respectively.</p>
+    <div class="mar-bottom-lg"></div>
+
+    <form>
+      <label for="contact_name">Full name</label>
+      <input class="is-fullwidth" type="text" placeholder="Mike Kokkolios" name="contact_name">
+      <label for="contact_email">Email address</label>
+      <input class="is-fullwidth" type="text" placeholder="me@domain.com" name="contact_email">
+      <label for="contact_body">Message</label>
+      <textarea class="is-fullwidth" placeholder="Hey, how is it going?" name="contact_body"></textarea><br>
+      <button class="is-primary">Send message</button>
+    </form>
+
+    <!-- Tables -->
+    <div class="mar-bottom-xxl"></div>
+    <h3>Tables</h3>
+    <p class="is-gray">Tables are automatically adjusted, depending on the screen size.</p>
+    <div class="mar-bottom-lg"></div>
+
+    <table>
+      <tr>
+        <th>Pokemon</th>
+        <th>Type</th>
+        <th>Species</th>
+      </tr>
+      <tr>
+        <td>Rayquaza</td>
+        <td>Dragon</td>
+        <td>Sky High</td>
+      </tr>
+      <tr>
+        <td>Groudon</td>
+        <td>Ground</td>
+        <td>Continent</td>
+      </tr>
+      <tr>
+        <td>Kyogre</td>
+        <td>Water</td>
+        <td>Sea Basin</td>
+      </tr>
+    </table>
+    <div class="mar-bottom-lg"></div>
+
+  </div>
+
+  <div class="mar-bottom-xxl"></div>
+
+  <footer class="is-gray">Crafted with love by <a href="#" target="_blank">Mike Kokkolios</a></footer>
+
+  <a href="https://github.com/mikekok/leaf" target="_blank" class="github-corner" aria-label="View source on GitHub"><svg width="60" height="60" viewBox="0 0 250 250" style="fill:#E5E9F2; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"> <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path> <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path> <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path> </svg></a> <style>.github-corner:hover .octo-arm{animation: octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%, 100%{transform: rotate(0)}20%, 60%{transform: rotate(-25deg)}40%, 80%{transform: rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation: none}.github-corner .octo-arm{animation: octocat-wave 560ms ease-in-out}}</style>
+
+  <!-- PrettyPrint -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+</body>
+
+</html>

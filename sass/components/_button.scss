@@ -1,0 +1,104 @@
+.btn,
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  background-color: transparent;
+  border: 0.1rem solid $color-primary;
+  border-radius: $border-radius;
+  color: $color-primary;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: $font-weight-bold;
+  height: 3.6rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.1rem;
+  padding: 0 2rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:focus,
+  &:hover {
+    outline: 0;
+  }
+
+  &[disabled] {
+    cursor: default;
+    background-color: $color-border;
+    border-color: $color-border;
+    color: $color-secondary;
+
+    &:focus,
+    &:hover {
+      background-color: $color-border;
+      border-color: $color-border;
+    }
+  }
+
+  &.is-clear {
+    background-color: transparent;
+    border-color: transparent;
+
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: shade($color-primary, 5%);
+    }
+  }
+
+  &.is-fullwidth {
+    width: 100%;
+  }
+
+  $types: (
+    primary: $color-primary,
+    blue: $color-blue,
+    purple: $color-purple,
+    red: $color-red,
+    yellow: $color-yellow
+  );
+
+  @each $type, $color in $types {
+    &.is-#{$type} {
+      background-color: $color;
+      border-color: $color;
+      color: $color-light;
+
+      &:focus,
+      &:hover {
+        background-color: shade($color, 5%);
+        border-color: shade($color, 5%);
+      }
+    }
+
+    &.is-#{$type}-outline {
+      background-color: transparent;
+      border-color: $color;
+      color: $color;
+
+      &:focus,
+      &:hover {
+        border-color: shade($color, 5%);
+        background-color: shade($color, 5%);
+        color: $color-light;
+      }
+    }
+  }
+
+  $sizes: (
+    small: (2.6, 1.2, 1.2),
+    large: (4.6, 3.2, 1.6)
+  );
+
+  @each $type, $style in $sizes {
+    &.is-#{$type} {
+      height: nth($style, 1)+rem;
+      line-height: (nth($style, 1) - 1)+rem;
+      padding: 0 nth($style, 2)+rem;
+      font-size: nth($style, 3)+rem;
+    }
+  }
+  
+}

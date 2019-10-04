@@ -1,0 +1,10 @@
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: shade($color-primary, 5%);
+  }
+}

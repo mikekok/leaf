@@ -1,0 +1,81 @@
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+input[type='color'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='datetime'],
+input[type='datetime-local'],
+input:not([type]),
+textarea,
+select {
+  appearance: none;
+  background-color: white;
+  border: 0.1rem solid $color-border;
+  border-radius: $border-radius;
+  box-shadow: none;
+  height: 3.8rem;
+  padding: 1.2rem;
+
+  &:focus {
+    border-color: shade($color-border, 5%);
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: $color-secondary;
+  }
+
+  &.is-fullwidth {
+    width: 100%;
+  }
+}
+
+select {
+  background: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='10px' viewBox='0 0 255 255' style='enable-background:new 0 0 255 255;' xml:space='preserve'%3E%3Cg%3E%3Cg id='arrow-drop-down'%3E%3Cpolygon points='0,63.75 127.5,191.25 255,63.75 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+  background-position: calc(100% - 1rem) center;
+  background-repeat: no-repeat;
+  padding-right: 3.2rem;
+  cursor: pointer;
+
+  &:focus {
+    background: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10px' height='10px' transform='rotate(180)' viewBox='0 0 255 255' style='enable-background:new 0 0 255 255;' xml:space='preserve'%3E%3Cg%3E%3Cg id='arrow-drop-down'%3E%3Cpolygon points='0,63.75 127.5,191.25 255,63.75 '/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E");
+    background-position: calc(100% - 1rem) center;
+    background-repeat: no-repeat;
+  }
+}
+
+textarea {
+  min-height: 6.5rem;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: 0.8rem;
+
+  &.is-bold {
+    font-weight: $font-weight-bold;
+  }
+
+  &.is-inline {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+  }
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  display: inline;
+}

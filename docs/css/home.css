@@ -1,0 +1,29 @@
+header {
+  height: 70vh;
+}
+
+#logo {
+  width: 128px;
+}
+
+.is-gray {
+  color: #8492A6;
+}
+
+.grid-box {
+  background-color: #E6E7F3;
+  text-transform: uppercase;
+  padding: .6rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  border-radius: .3rem;
+  color: #8492A6;
+}
+
+footer {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 2rem 0;
+}

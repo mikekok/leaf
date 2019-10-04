@@ -1,0 +1,54 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-dark;
+  
+  &.is-colored {
+    background-color: $color-light;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 144rem;
+  margin: 0 auto;
+
+  &.is-fullwidth {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &.is-small {
+    max-width: 102.4rem;
+  }
+}
+
+.flex-container {
+  display: flex;
+  
+  &.is-vertical {
+    flex-direction: column;
+  }
+
+  &.is-centered-h {
+    justify-content: center;
+  }
+
+  &.is-centered-v {
+    align-items: center;
+  }
+
+  &.is-centered {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &.is-fullheight {
+    height: 100vh;
+  }
+}
