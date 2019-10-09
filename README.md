@@ -2,6 +2,7 @@
   <img width="128" height="128" src="https://svgshare.com/i/FKW.svg">
 </p>
 
+<h2 align="center">leaf.css</h2>
 <p align="center">A modern, minimal, easy to use CSS framework</p>
 
 ## Installation
