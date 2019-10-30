@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" height="128" src="https://svgshare.com/i/FKW.svg">
+  <img width="128" height="128" src="https://mikekok.github.io/leaf/img/logo.svg">
 </p>
 
 <h2 align="center">leaf.css</h2>
